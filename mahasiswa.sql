@@ -20,6 +20,10 @@ create table mahasiswa(
     alamat varchar(100) not null,
     foreign key (id_jurusan) references jurusan(id)
 );
+desc mahasiswa;
+
+show tables;
+
 -- melihat deskripsi tabel
 desc mahasiswa;
 desc jurusan;
