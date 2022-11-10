@@ -2,16 +2,16 @@
 
 if(isset($_GET['p'])) {
     
-    if ($_GET['p'] == 'tampil') { // standar
+    if ($_GET['p'] == 'tampilkan') { // standar
 
         echo $_POST['nama'];
         echo "<br/>";
         echo $_POST['password'];
 
     } else if ($_GET['p'] == "pesan") { // ada pesannya
-        echo "Halo apa kabar ".$_POST['nama'];
+        echo "Halo gimana kabarnya? ".$_POST['nama'];
         echo "<br/>";
-        echo "password anda adalah ".$_POST['password'];
+        echo "berikut password anda ".$_POST['password'];
 
     } else if ($_GET['p'] == "aman") { // tambahan error
     
@@ -37,5 +37,5 @@ if(isset($_GET['p'])) {
     }
 
 }  else {
-    echo "Anda tidak boleh mengakses halaman ini";
+    echo "Anda tidak dapat mengakses halaman ini";
 }
